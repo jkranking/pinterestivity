@@ -38,3 +38,29 @@ ActiveRecord::Schema.define(version: 20161010202906) do
   end
 
 end
+
+
+# DROP TABLE IF EXISTS `H_Session_Model_Type_User`;
+
+# CREATE TABLE `H_Session_Model_Type_User`
+# (
+#         `_id` INTEGER NOT NULL AUTO_INCREMENT,
+#         `name` VARCHAR(256) NOT NULL,
+#         `firstName` VARCHAR(256) NOT NULL,
+#         `lastName` VARCHAR(256) NOT NULL,
+#         `username` VARCHAR(256),
+#         `password` VARCHAR(256),
+#         `account` INT,
+#         PRIMARY KEY (`_id`),
+#         CONSTRAINT FOREIGN KEY (`account`)
+#                 REFERENCES `H_TLS_Model_Type_Account` (`_id`)
+# ) ENGINE=InnoDB;
+
+# DROP TABLE IF EXISTS `H_TLS_Model_Type_Account`;
+
+# CREATE TABLE `H_TLS_Model_Type_Account`
+# (
+#         `_id` INTEGER NOT NULL AUTO_INCREMENT,
+#         `name` VARCHAR(256) NOT NULL,
+#         PRIMARY KEY (`_id`)
+# ) ENGINE=InnoDB;
